@@ -225,13 +225,13 @@ Functions can be used to create named blocks of code that can be executed/reused
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+`console.log` is a tool used to help you see what the outcome of code could be by printing it to the console, while `return` is used to pass a value back to where the call was made and then end the function.
 ```
 
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Defining a function is writing/creating the named blocks of code that can be executed/reused later, while calling a function is using a keyword/shortcut to 'call' or execute the block of code you previously provided.
 ```
 
 ### B.2. Describe these data types.
@@ -241,19 +241,19 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+a sequence of characters that can consist of letters, numbers, symbols, words or sentences
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+positive or negatice numbers that you can perform mathematical operations on. They should not contain letters or symbols (other than '-').
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+
 ```
 
 **_Array_**
