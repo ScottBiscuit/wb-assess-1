@@ -30,7 +30,10 @@ function bWords(words) {
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+  originalArray = originalArray.concat(additionalItems)
+  return originalArray;
+}
 
 // Return an array of all items with the given length.
 // Ex.:
