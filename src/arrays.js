@@ -2,13 +2,28 @@
 // Ex.:
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
-function greaterThanTen(numbers) {}
-
+function greaterThanTen(numbers) {
+  let greaterThanTen = [];
+  for (let i = 0; i < numbers.length; i++){
+    if (numbers[i] > 10){
+      greaterThanTen.push(numbers[i])
+    }
+  }
+  return greaterThanTen;
+}
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
-function bWords(words) {}
+function bWords(words) {
+  let bWords = [];
+  for (let i = 0; i < words.length; i++){
+    if (words[i][0] === 'b' || words[i][0] === 'B'){
+      bWords.push(words[i]);
+    }
+  }
+  return bWords;
+}
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..

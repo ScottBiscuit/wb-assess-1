@@ -21,7 +21,9 @@ function average(x, y) {
 // Ex.:
 //   approximatelyEqual(10.001, 10);
 //   => true
-function approximatelyEqual(x, y) {}
+function approximatelyEqual(x, y) {
+  return Math.abs(x - y) < 0.001;
+}
 
 // Given a first name and last name, return a full name in the format "FIRST LAST"
 // Ex.:
