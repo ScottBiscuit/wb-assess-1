@@ -241,25 +241,25 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-a sequence of characters that can consist of letters, numbers, symbols, words or sentences
+A sequence of characters that can consist of letters, numbers, symbols, words or sentences
 ```
 
 **_Number_**
 
 ```
-positive or negatice numbers that you can perform mathematical operations on. They should not contain letters or symbols (other than '-').
+Positive or negatice numbers that you can perform mathematical operations on. They should not contain letters or symbols (other than '-').
 ```
 
 **_Boolean_**
 
 ```
-
+Used to execute code based on conditional logic using true (truthy) or false (falsey) values
 ```
 
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Used to store multiple values and elements in one variable. These values can be any data type and a mixture of each (string, number, boolean, etc)
 ```
 
 ### B.3. Trace the value of `x`
@@ -282,7 +282,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
