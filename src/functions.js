@@ -46,13 +46,37 @@ function generateSentence(person, beverage, location) {
 // Ex.:
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
-function censorVowels(string) {}
+function censorVowels(string) {
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  let censored = '';
+
+  for(let i = 0; i < string.length; i++) {
+    let char = string[i];
+
+    if (vowels.indexOf(char) >= 0) {
+      censored += '*';
+    } else {
+      censored += char;
+    }
+  }
+  return censored;
+}
 
 // Return the given string in sticky case.
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+  let newString = '';
+  for (let i = 0; i < string.length; i++) {
+    if (i % 2 === 0) {
+      newString += string[i].toLowerCase();
+    } else {
+      newString += string[i].toUpperCase();
+    }
+  }
+  return newString;
+}
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -66,7 +90,30 @@ function stickyCase(string) {}
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+function leetspeak(string) {
+  let leetspeak = '';
+
+  for(let i = 0; i < string.length; i++) {
+    let char = string[i];
+
+    if (char === 'a') {
+      leetspeak += '4';
+    } else if (char === 'e') {
+      leetspeak += '3';
+    } else if (char === 'i') {
+      leetspeak += '1';
+    } else if (char === 'o') {
+      leetspeak += '0';
+    } else if (char === 's') {
+      leetspeak += '5';
+    } else if (char === 't') {
+      leetspeak += '7';
+    } else {
+      leetspeak += char;
+    }
+  }
+  return leetspeak;
+}
 
 export {
   approximatelyEqual,
