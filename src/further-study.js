@@ -47,6 +47,20 @@ function divisibleByEither(a, b, c) {
 //   => '4s2b'
 //   compressString('ssssbbba');
 //   => '4s3ba'
-function compressString(string) {}
+function compressString(string) {
+    let compressedString = '';
+    let count = 1;
+  
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] === string[i + 1]) {
+        count++;
+      } else {
+        compressedString += count + string[i];
+        count = 1;
+      }
+    }
+  
+    return compressedString;
+  }
 
 export { commonStrings, compressString, divisibleByEither };
